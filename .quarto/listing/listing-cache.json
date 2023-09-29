@@ -1,0 +1,8 @@
+{
+  "listingMap": {
+    "index.qmd": [
+      "blog_data/blogs.yml",
+      "blog/posts"
+    ]
+  }
+}

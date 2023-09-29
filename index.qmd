@@ -1,0 +1,16 @@
+
+::: {layout="[21,79]" .profile-header}
+
+![Profile](DicksonProfile.png) [![GitHub](fab fa-github)](https://github.com/tcdickson) [![LinkedIn](fab fa-linkedin)](https://www.linkedin.com/in/tyler-dickson-7571247a/) [![Email](far fa-envelope)](mailto:your-email@example.com)
+
+Hello, I am Tyler Dickson. I am former Green Beret turned programmer who is passionate about all things related to software engineering. Although my academic background includes a Financial Economics Degree from West Point Military Academy, over two years ago I discovered a love for programming. I have spent every waking moment pursuing knowledge in various coding languages to include Java, C, Javascript, and Python.
+:::
+
+Due to my close connection with the military, I have always had a desire to help those who serve. As a Green Beret, I have had the pleasure of serving as a commander in some of the most politically sensitive and complex areas of the world from the Middle East, to Eastern Europe. One thing I know for certain, is that the miliary is missing the mark in providing the troops with technological tools it provides. That's why I set out to develop an application that can provide an outlet for soldiers, families, and aspiring Special Operations soldiers. Although the project is not complete, you can see a [demo of this project here](URL).
+
+
+I have also created a site that seeks to solve one of the biggest individual issues that individual soldiers encounter on a day to day basis. File sharing. Similar to the way Github has provided an outlet to share files amoungst the tech community, I seek to provide a platform where soldiers can upload and share helpful documents. [Click here](https://greencollectives.com/) to see the site. 
+
+Finally, a copy of my CV can be [downloaded here](URL). 
+
+
