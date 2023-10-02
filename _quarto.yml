@@ -5,7 +5,7 @@ sidebar:
   contents:
     - about.qmd
 website:
-  title: "About"
+  title: "Tyler"
   navbar: 
     search: true
     background: primary
