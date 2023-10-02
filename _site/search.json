@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Tyler Dickson",
     "section": "",
-    "text": "Hello, I am Tyler Dickson. I am former Green Beret turned programmer who is passionate about all things related to software engineering. Although my academic background includes a Financial Economics Degree from West Point Military Academy, over two years ago I discovered a love for programming. I have spent every waking moment pursuing knowledge in various coding languages to include Java, C, Javascript, and Python. I have been recently been accepted into Georgia Tech’s Masters in Computer Science program and will attend in Spring 2024.\n\nDue to my close connection with the military, I have always had a desire to help those who serve. As a Green Beret, I have had the pleasure of serving as a commander in some of the most politically sensitive and complex areas of the world from the Middle East, to Eastern Europe. One thing I know for certain, is that the miliary is missing the mark in providing the troops with technological tools it provides. That’s why I set out to develop an application that can provide an outlet for soldiers, families, and aspiring Special Operations soldiers. Although the project is not complete, you can see a demo of this project here.\nI have also created a site that seeks to solve one of the biggest individual issues that individual soldiers encounter on a day to day basis. File sharing. Similar to the way Github has provided an outlet to share files amoungst the tech community, I seek to provide a platform where soldiers can upload and share helpful documents. Click here to see the site.\nFinally, a copy of my CV can be downloaded here."
+    "text": "Hello, I am Tyler Dickson. I am former Green Beret turned programmer who is passionate about all things software engineering. Although my academic background includes a Financial Economics Degree from West Point Military Academy, over two years ago I discovered a love for programming. I have spent every waking moment pursuing knowledge in various coding languages to include Java, C, Javascript, and Python. I have been recently been accepted into Georgia Tech’s Masters in Computer Science program and will attend in Spring 2024.\n\nDue to my close connection with the military, I have always had a desire to help those who serve. As a Green Beret, I have had the pleasure of serving as a commander in some of the most politically sensitive and complex areas of the world from the Middle East, to Eastern Europe. One thing I know for certain, is that the miliary is missing the mark in providing soldiers with the technological they deserve. That’s why I set out to develop an application that can provide an outlet for soldiers, families, and aspiring Special Operations soldiers. Although the project is not complete, you can see a demo of this project here.\nI have also created a site that seeks to solve one of the biggest individual issues that individual soldiers encounter on a day to day basis. File sharing. Similar to the way Github has provided an outlet to share files amoungst the tech community, I seek to provide a platform where soldiers can upload and share helpful documents. The file sharing site is structured around an HTTP API gateway that send requests to a lambda function in AWS to generate pre signed urls, and making GET and PUT requests to an S3 Bucket. Click here to see the site. (The site is constantly undergoing maintenence - reach out if you’re unable to access).\nFinally, a copy of my CV can be downloaded here."
   },
   {
     "objectID": "about.html",
@@ -19,5 +19,12 @@
     "title": "TysSite",
     "section": "💼 Get In Touch",
     "text": "💼 Get In Touch\nDo you need help operationalizing ML or large language models?\nI’m open to consulting work and other forms of advisory. Email me at hamel.husain@gmail.com if you’d like to chat!"
+  },
+  {
+    "objectID": "greenSociety.html",
+    "href": "greenSociety.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site"
   }
 ]

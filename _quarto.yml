@@ -1,19 +1,21 @@
 project:
   type: website
-
+sidebar:
+  contents:
+    - about.qmd
 website:
-  title: "TysSite"
-  navbar:
-    left:
-      - href: index.qmd
-        text: Home
-      - about.qmd
-
+  title: "About"
+  navbar: 
+    search: true
+    background: primary
+  
+    
 format:
   html:
-    theme: cosmo
+    theme:
+      dark: darkly
+      light: flatly
+      
     css: styles.css
     toc: true
-
-
-
+    font-family: sans-serif
