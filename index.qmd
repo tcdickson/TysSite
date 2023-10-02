@@ -38,4 +38,4 @@ Due to my close connection with the military, I have always had a desire to help
 
 I have also created a site that seeks to solve one of the biggest individual issues that individual soldiers encounter on a day to day basis. File sharing. Similar to the way Github has provided an outlet to share files amoungst the tech community, I seek to provide a platform where soldiers can upload and share helpful documents. The file sharing site is structured around an HTTP API gateway that send requests to a lambda function in AWS to generate pre signed urls, and making GET and PUT requests to an S3 Bucket. [Click here](https://greencollectives.com/) to see the site. (The site is constantly undergoing maintenence - reach out if you're unable to access). 
 
-Finally, a copy of my CV can be downloaded [here](Assets/Dickson_Resume.pdf)</a>. 
+Finally, a copy of my CV can be downloaded [here](Dickson_Resume.pdf)</a>. 
