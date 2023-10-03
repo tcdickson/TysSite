@@ -17,25 +17,25 @@ about:
 ```{=html}
 
 
-<a class="btn btn-outline" href="https://github.com/tcdickson/" target="_blank" rel="noopener noreferrer">
+<a class="btn btn-outline", href="https://github.com/tcdickson/" target="_blank" rel="noopener noreferrer">
     <i class="bi bi-github" role='img' aria-label='Github'></i>
 </a>
-<a class="btn btn-outline" href="https://www.linkedin.com/in/tyler-dickson-7571247a/" target="_blank" rel="noopener noreferrer">
+<a class="btn btn-outline", href="https://www.linkedin.com/in/tyler-dickson-7571247a/" target="_blank" rel="noopener noreferrer">
     <i class="bi bi-linkedin" role='img' aria-label='LinkedIn'></i>
 </a>
-<a class="btn btn-outline" href="mailto:tylerdickson17@gmail.com" target="_blank" rel="noopener noreferrer">
+<a class="btn btn-outline", href="mailto:tylerdickson17@gmail.com" target="_blank" rel="noopener noreferrer">
     <i class="ai bi-envelope" role='img' aria-label='email'></i>
     </a>
 
 </a>
 ```
-<br>
-Hello, I am Tyler Dickson. I am former Green Beret turned programmer who is passionate about all things software engineering. Although my academic background includes a Financial Economics Degree from West Point Military Academy, over two years ago I discovered a love for programming. I have spent every waking moment pursuing knowledge in various coding languages to include Java, C, Javascript, and Python. I have been recently been accepted into Georgia Tech's Masters in Computer Science program and will attend in Spring 2024. 
-<br>
 
-Due to my close connection with the military, I have always had a desire to help those who serve. As a Green Beret, I have had the pleasure of serving as a commander in some of the most politically sensitive and complex areas of the world from the Middle East, to Eastern Europe. One thing I know for certain, is that the military is missing the mark in providing soldiers with the technology they deserve. That's why I set out to develop an application that can provide an outlet for soldiers, families, and aspiring Special Operations soldiers. Although the project is not complete, you can see a [demo of this project here](https://youtu.be/yswU-CFTsh4?si=49Sop1xRnDuBgrEI).
+Hello, I am Tyler Dickson. I am former Green Beret turned programmer who is passionate about all things software engineering. Although my academic background includes a Financial Economics Degree from West Point Military Academy, over two years ago I discovered a love for programming. I have spent every waking moment pursuing knowledge in various coding languages to include Java, C, Javascript, and Python. I have been recently been accepted into Georgia Tech's Masters in Computer Science program and will attend in Spring 2024. 
+
+
+Due to my close connection with the military, I have always had a desire to help those who serve. As a Green Beret, I have had the pleasure of serving as a commander in some of the most politically sensitive and complex areas of the world from the Middle East, to Eastern Europe. One thing I know for certain, is that the military is missing the mark in providing soldiers with the technology they deserve. That's why I set out to develop an application that can provide an outlet for soldiers, families, and aspiring Special Operations soldiers. Although the project is not complete, you can see a [demo of this project here](https://youtu.be/yswU-CFTsh4?si=49Sop1xRnDuBgrEI). Reach out for access to the private code repository.
 
 
 I have also created a site that seeks to solve one of the biggest individual issues that individual soldiers encounter on a day to day basis. File sharing. Similar to the way Github has provided an outlet to share files amoungst the tech community, I seek to provide a platform where soldiers can upload and share helpful documents. The file sharing site is structured around an HTTP API gateway that send requests to a lambda function in AWS to generate pre signed urls, and making GET and PUT requests to an S3 Bucket. [Click here](https://greencollectives.com/) to see the site. (The site is constantly undergoing maintenence - reach out if you're unable to access). 
 
-Finally, a copy of my CV can be downloaded [here](Dickson_Resume.pdf)</a>. 
+Finally, a copy of my CV can be downloaded [here](Dickson_Resume.pdf). 
