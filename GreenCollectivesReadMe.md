@@ -80,8 +80,7 @@ For a complete list of dependencies and their versions, please refer to the [pom
 
 ### Installing
 
-You can download the latest version of our application for different platforms:
-
+You can download the latest version of our application for the following platforms:
 
 ### Linux Dedian/Ubuntu:
 
@@ -96,6 +95,10 @@ sudo dpkg -i greencollectives_1.0_amd64.deb
 ### macOS AArch64 architecture:
 
 - [macOS (AArch64 architecture) .dmg](https://github.com/tcdickson/Green-Collectives/releases/download/v1.0.0/GreenCollectives-1.0.dmg)
+
+### Windows:
+
+- Coming soon
 
 ## Author
 
