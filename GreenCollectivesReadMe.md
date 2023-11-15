@@ -85,7 +85,7 @@ You can download the latest version of our application for different platforms:
 
 ### Linux Dedian/Ubuntu:
 
-- [Linux (Debian-based)-.deb](https://github.com/tcdickson/Green-Collectives/releases/tag/v1.0.0/greencollectives_1.0_amd64.deb)
+- [Linux (Debian-based)-.deb](https://github.com/tcdickson/Green-Collectives/releases/download/v1.0.0/greencollectives_1.0_amd64.deb)
 
 Terminal commands to install after download:
 
@@ -95,7 +95,7 @@ sudo dpkg -i greencollectives_1.0_amd64.deb
 ```
 ### macOS AArch64 architecture:
 
-- [macOS (AArch64 architecture) .dmg](https://github.com/tcdickson/Green-Collectives/releases/tag/v1.0.0/GreenCollectives-1.0.dmg)
+- [macOS (AArch64 architecture) .dmg](https://github.com/tcdickson/Green-Collectives/releases/download/v1.0.0/GreenCollectives-1.0.dmg)
 
 ## Author
 
