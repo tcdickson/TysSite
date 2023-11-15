@@ -1,16 +1,79 @@
 [
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
+    "objectID": "GreenCollectivesReadMe.html",
+    "href": "GreenCollectivesReadMe.html",
+    "title": "Green Collectives",
     "section": "",
-    "text": "About this site"
+    "text": "A Desktop Application built with javaFx with the intention of solving relevant problems and inefficiencies that U.S. Army Service members, and gun enthusiasts face on a daily basis.\n\n\nAfter 10+ years in the military, I’m well aquatinted with it’s inefficiencies. I wanted to build something to help military personnel with some of their most relevant issues. Green Collectives is a “one-stop-shop” meant to provide soldiers with access to useful files, a consolidated list of military websites, tools to build and manage shooting ranges, competitive workouts, and access to current events.\nThe application’s features are as follows:\n\n\n\nThe resources feature has 19 links that load different resource drives. The drives act as file repositories for files that are available for download by utilizing client-initiated GET requests through an HTTP API, which is then routed to a Lambda function in AWS, programmed in Node.js on the backend. This Lambda function generates pre-signed URLs, enabling users to execute their requests. These requests are then directed to an AWS S3 bucket within an encrypted folder. There is also a link to a web application that I built as well that does the same tasks, but it allows you to upload files to contribute as well. It’s important to note that all files are unclassified and are free of PII.\n\n \n\n\n\n\nThe Links feature compiles every useful military website, selected on their value to the military community. A few of the links require military issued hardware to access.\n\n\n\n\n\n\nThe Range Builder feature grants access to over to 130+ pistol and rifle drills. Users can use the checkbox to build their desired shooting range. The user can also “preview” each drill to see a detailed list of instructions for each drill, as well as an embedded youtube video. When finished, they select “Build My Range”.\n\n \n\nUsers are then prompted to a screen where they can enter amplifying information (number of shooters and iterations per shooter). The user can then click “calculate ammo expenditure” to view their estimated ammunition expenditure for their custom range day. They can then use the Apache pdfbox Library to save to their local device as a pdf.\n\n\n\nAmmo Expenditure\n\n\n\n\n\nEach drill corresponds to a number of estimated rounds expended (per drill) through the use of a list, which is inserted into a hashmap, and passed into another Class through use of a constructor when a new scene is loaded. The end result is a list that can be used in a simple algorithm to calculate ammunition expenditure for any amount of drills.\n\n\n\nThe Workouts Feature is a fun take on mortal combat with some of my Green Beret Buddies as substitutes. The user can cycle through a list of Green Berets, and download workouts. When the user downloads a workout, they are inplimenting the same process as before when requesting to download files from the resources page by making GET requests through an HTTP API – routed to a Lambda function in AWS, programmed in Node.js on the backend. This Lambda function generates pre-signed URLs, enabling users to execute their requests. These requests are then directed to an AWS S3 bucket within an encrypted folder.\n\n\n\nWorkouts\n\n\n\n\n\nThe News Feature utilizes the Java Rome Library, and makes RSS feed requests to several news outlets – The Hill, Newsweek, Rand National Terroism articles, Rand Cyber and Data Science articles, Rand Homeland Security and Public Safety articles, The Army Times, Atlas News, and the White House Briefing room.\n\n \n\n\n\n\n\n\nFor a complete list of dependencies and their versions, please refer to the pom.xml file.\n\n\n\nYou can download the latest version of our application for different platforms:\n\n\n\n\nLinux (Debian-based)-.deb\n\nTerminal commands to install after download:\ncd Downloads\nsudo dpkg -i greencollectives_1.0_amd64.deb\n\n\n\n\nmacOS (AArch64 architecture) .dmg\n\n\n\n\n\nTyler Dickson Email Me\n\n\n\nThis project is licensed under the GNU GENERAL PUBLIC LICENSE VERSION 3"
+  },
+  {
+    "objectID": "GreenCollectivesReadMe.html#description",
+    "href": "GreenCollectivesReadMe.html#description",
+    "title": "Green Collectives",
+    "section": "",
+    "text": "After 10+ years in the military, I’m well aquatinted with it’s inefficiencies. I wanted to build something to help military personnel with some of their most relevant issues. Green Collectives is a “one-stop-shop” meant to provide soldiers with access to useful files, a consolidated list of military websites, tools to build and manage shooting ranges, competitive workouts, and access to current events.\nThe application’s features are as follows:"
+  },
+  {
+    "objectID": "GreenCollectivesReadMe.html#resources",
+    "href": "GreenCollectivesReadMe.html#resources",
+    "title": "Green Collectives",
+    "section": "",
+    "text": "The resources feature has 19 links that load different resource drives. The drives act as file repositories for files that are available for download by utilizing client-initiated GET requests through an HTTP API, which is then routed to a Lambda function in AWS, programmed in Node.js on the backend. This Lambda function generates pre-signed URLs, enabling users to execute their requests. These requests are then directed to an AWS S3 bucket within an encrypted folder. There is also a link to a web application that I built as well that does the same tasks, but it allows you to upload files to contribute as well. It’s important to note that all files are unclassified and are free of PII."
+  },
+  {
+    "objectID": "GreenCollectivesReadMe.html#links",
+    "href": "GreenCollectivesReadMe.html#links",
+    "title": "Green Collectives",
+    "section": "",
+    "text": "The Links feature compiles every useful military website, selected on their value to the military community. A few of the links require military issued hardware to access."
+  },
+  {
+    "objectID": "GreenCollectivesReadMe.html#range-builder",
+    "href": "GreenCollectivesReadMe.html#range-builder",
+    "title": "Green Collectives",
+    "section": "",
+    "text": "The Range Builder feature grants access to over to 130+ pistol and rifle drills. Users can use the checkbox to build their desired shooting range. The user can also “preview” each drill to see a detailed list of instructions for each drill, as well as an embedded youtube video. When finished, they select “Build My Range”.\n\n \n\nUsers are then prompted to a screen where they can enter amplifying information (number of shooters and iterations per shooter). The user can then click “calculate ammo expenditure” to view their estimated ammunition expenditure for their custom range day. They can then use the Apache pdfbox Library to save to their local device as a pdf.\n\n\n\nAmmo Expenditure\n\n\n\n\n\nEach drill corresponds to a number of estimated rounds expended (per drill) through the use of a list, which is inserted into a hashmap, and passed into another Class through use of a constructor when a new scene is loaded. The end result is a list that can be used in a simple algorithm to calculate ammunition expenditure for any amount of drills."
+  },
+  {
+    "objectID": "GreenCollectivesReadMe.html#workouts",
+    "href": "GreenCollectivesReadMe.html#workouts",
+    "title": "Green Collectives",
+    "section": "",
+    "text": "The Workouts Feature is a fun take on mortal combat with some of my Green Beret Buddies as substitutes. The user can cycle through a list of Green Berets, and download workouts. When the user downloads a workout, they are inplimenting the same process as before when requesting to download files from the resources page by making GET requests through an HTTP API – routed to a Lambda function in AWS, programmed in Node.js on the backend. This Lambda function generates pre-signed URLs, enabling users to execute their requests. These requests are then directed to an AWS S3 bucket within an encrypted folder.\n\n\n\nWorkouts"
+  },
+  {
+    "objectID": "GreenCollectivesReadMe.html#news",
+    "href": "GreenCollectivesReadMe.html#news",
+    "title": "Green Collectives",
+    "section": "",
+    "text": "The News Feature utilizes the Java Rome Library, and makes RSS feed requests to several news outlets – The Hill, Newsweek, Rand National Terroism articles, Rand Cyber and Data Science articles, Rand Homeland Security and Public Safety articles, The Army Times, Atlas News, and the White House Briefing room."
+  },
+  {
+    "objectID": "GreenCollectivesReadMe.html#getting-started",
+    "href": "GreenCollectivesReadMe.html#getting-started",
+    "title": "Green Collectives",
+    "section": "",
+    "text": "For a complete list of dependencies and their versions, please refer to the pom.xml file.\n\n\n\nYou can download the latest version of our application for different platforms:\n\n\n\n\nLinux (Debian-based)-.deb\n\nTerminal commands to install after download:\ncd Downloads\nsudo dpkg -i greencollectives_1.0_amd64.deb\n\n\n\n\nmacOS (AArch64 architecture) .dmg"
+  },
+  {
+    "objectID": "GreenCollectivesReadMe.html#author",
+    "href": "GreenCollectivesReadMe.html#author",
+    "title": "Green Collectives",
+    "section": "",
+    "text": "Tyler Dickson Email Me"
+  },
+  {
+    "objectID": "GreenCollectivesReadMe.html#license",
+    "href": "GreenCollectivesReadMe.html#license",
+    "title": "Green Collectives",
+    "section": "",
+    "text": "This project is licensed under the GNU GENERAL PUBLIC LICENSE VERSION 3"
   },
   {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Tyler Dickson",
     "section": "",
-    "text": ":::{#hero-heading}\n\n    \n\n\n    \n\n\n    \n    \nHello, I am Tyler Dickson. I am former Green Beret turned programmer who is passionate about all things software engineering. Although my academic background includes a Financial Economics Degree from West Point Military Academy, over two years ago I discovered a love for programming. I have spent every waking moment pursuing knowledge in various coding languages to include Java, C, Javascript, and Python. I have been recently been accepted into Georgia Tech’s Masters in Computer Science program and will attend in Spring 2024.\nDue to my close connection with the military, I have always had a desire to help those who serve. As a Green Beret, I have had the pleasure of serving as a commander in some of the most politically sensitive and complex areas of the world from the Middle East, to Eastern Europe. One thing I know for certain, is that the military is missing the mark in providing soldiers with the technology they deserve. That’s why I set out to develop an application that can provide an outlet for soldiers, families, and aspiring Special Operations soldiers. Although the project is not complete, you can see a demo of this project here. Reach out for access to the private code repository.\nI have also created a site that seeks to solve one of the biggest individual issues that individual soldiers encounter on a day to day basis. File sharing. Similar to the way Github has provided an outlet to share files amoungst the tech community, I seek to provide a platform where soldiers can upload and share helpful documents. The file sharing site is structured around an HTTP API gateway that send requests to a lambda function in AWS to generate pre signed urls, and making GET and PUT requests to an S3 Bucket. Click here to see the site. (The site is constantly undergoing maintenence - reach out if you’re unable to access).\nFinally, a copy of my CV can be downloaded here."
+    "text": "Hello, I am Tyler Dickson. I am former Green Beret turned programmer who is passionate about software. Although my academic background includes a Financial Economics Degree from West Point Military Academy, over two years ago I discovered a love for programming. I have spent every waking moment pursuing knowledge in various coding languages to include Java, C, Javascript, and Python. I have been recently been accepted into Georgia Tech’s Masters in Computer Science program and will attend in Spring 2024.\nDue to my close connection with the military, I have always had a desire to help those who serve. As a Green Beret, I have had the pleasure of serving as a commander in some of the most politically sensitive and complex areas of the world from the Middle East, to Eastern Europe. That’s why I set out to develop an application that can act as a “one-stop-shop”, providing soldiers with access to useful files, a consolidated list of military websites, tools to build and manage shooting ranges, competitive workouts, and access to current events. Check out the Github Repo here here. Or, if you prefer a high overview of the project, check out the README File here.\nI have also created a web application that seeks to solve one of the biggest individual issues that individual soldiers encounter on a day to day basis. File sharing. Similar to the way Github has provided an outlet to share files amoungst the tech community, I seek to provide a platform where soldiers can upload and share helpful documents. The file sharing site is structured around an HTTP API gateway that send requests to a lambda function in AWS to generate pre signed urls, and making GET and PUT requests to an S3 Bucket. Click here to see the site.\nFinally, a copy of my CV can be downloaded here."
   }
 ]

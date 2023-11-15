@@ -1,11 +1,14 @@
 project:
   type: website
   output-dir: docs
+  render: 
+    - index.qmd
+    - GreenCollectivesReadMe.md
 sidebar:
   contents:
     - about.qmd
 website:
-  title: "Tyler"
+  title: "Home"
   navbar: 
     search: true
     background: primary

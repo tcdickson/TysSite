@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.3.433">
+<meta name="generator" content="quarto-1.3.450">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Tyler - About</title>
+<title>Home – greencollectivesreadme</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -74,7 +74,7 @@ ul.task-list li input[type="checkbox"] {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container">
     <a class="navbar-brand" href="./index.html">
-    <span class="navbar-title">Tyler</span>
+    <span class="navbar-title">Home</span>
     </a>
   </div>
         <div class="quarto-navbar-tools ms-auto">
@@ -89,31 +89,130 @@ ul.task-list li input[type="checkbox"] {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#green-collectives" id="toc-green-collectives" class="nav-link active" data-scroll-target="#green-collectives">Green Collectives</a>
+  <ul class="collapse">
+  <li><a href="#description" id="toc-description" class="nav-link" data-scroll-target="#description">Description</a></li>
+  <li><a href="#resources" id="toc-resources" class="nav-link" data-scroll-target="#resources">Resources:</a></li>
+  <li><a href="#links" id="toc-links" class="nav-link" data-scroll-target="#links">Links:</a></li>
+  <li><a href="#range-builder" id="toc-range-builder" class="nav-link" data-scroll-target="#range-builder">Range Builder:</a></li>
+  <li><a href="#workouts" id="toc-workouts" class="nav-link" data-scroll-target="#workouts">Workouts:</a></li>
+  <li><a href="#news" id="toc-news" class="nav-link" data-scroll-target="#news">News:</a></li>
+  <li><a href="#getting-started" id="toc-getting-started" class="nav-link" data-scroll-target="#getting-started">Getting Started</a>
+  <ul class="collapse">
+  <li><a href="#dependencies" id="toc-dependencies" class="nav-link" data-scroll-target="#dependencies">Dependencies</a></li>
+  <li><a href="#installing" id="toc-installing" class="nav-link" data-scroll-target="#installing">Installing</a></li>
+  <li><a href="#linux-dedianubuntu" id="toc-linux-dedianubuntu" class="nav-link" data-scroll-target="#linux-dedianubuntu">Linux Dedian/Ubuntu:</a></li>
+  <li><a href="#macos-aarch64-architecture" id="toc-macos-aarch64-architecture" class="nav-link" data-scroll-target="#macos-aarch64-architecture">macOS AArch64 architecture:</a></li>
+  </ul></li>
+  <li><a href="#author" id="toc-author" class="nav-link" data-scroll-target="#author">Author</a></li>
+  <li><a href="#license" id="toc-license" class="nav-link" data-scroll-target="#license">License</a></li>
+  </ul></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">About</h1>
+
+
+<section id="green-collectives" class="level1">
+<h1>Green Collectives</h1>
+<p>A Desktop Application built with javaFx with the intention of solving relevant problems and inefficiencies that U.S. Army Service members, and gun enthusiasts face on a daily basis.</p>
+<section id="description" class="level2">
+<h2 class="anchored" data-anchor-id="description">Description</h2>
+<p>After 10+ years in the military, I’m well aquatinted with it’s inefficiencies. I wanted to build something to help military personnel with some of their most relevant issues. Green Collectives is a “one-stop-shop” meant to provide soldiers with access to useful files, a consolidated list of military websites, tools to build and manage shooting ranges, competitive workouts, and access to current events.</p>
+<p>The application’s features are as follows:</p>
+</section>
+<section id="resources" class="level2">
+<h2 class="anchored" data-anchor-id="resources">Resources:</h2>
+<p>The resources feature has 19 links that load different resource drives. The drives act as file repositories for files that are available for download by utilizing client-initiated GET requests through an HTTP API, which is then routed to a Lambda function in AWS, programmed in Node.js on the backend. This Lambda function generates pre-signed URLs, enabling users to execute their requests. These requests are then directed to an AWS S3 bucket within an encrypted folder. There is also a link to a web application that I built as well that does the same tasks, but it allows you to upload files to contribute as well. It’s important to note that all files are unclassified and are free of PII.</p>
+<div style="display: flex; justify-content: space-between;">
+<p><img src="ScreenShots/resourcesScreenShot.png" alt="Resources" width="48%" height="auto"> <img src="ScreenShots/driveScreenShot.png" alt="Drives" width="48%" height="auto"></p>
 </div>
+</section>
+<section id="links" class="level2">
+<h2 class="anchored" data-anchor-id="links">Links:</h2>
+<p>The Links feature compiles every useful military website, selected on their value to the military community. A few of the links require military issued hardware to access.</p>
+<div>
+<p><img src="ScreenShots/linksScreenShot.png" alt="Links" width="55%" height="auto"></p>
+</div>
+</section>
+<section id="range-builder" class="level2">
+<h2 class="anchored" data-anchor-id="range-builder">Range Builder:</h2>
+<p>The Range Builder feature grants access to over to 130+ pistol and rifle drills. Users can use the checkbox to build their desired shooting range. The user can also “preview” each drill to see a detailed list of instructions for each drill, as well as an embedded youtube video. When finished, they select “Build My Range”.</p>
+<div style="display: flex; justify-content: space-between;">
+<p><img src="ScreenShots/rangesScreenShot.png" alt="Ranges" width="54%" height="auto"> <img src="ScreenShots/rangeDescriptionScreenShot.png" alt="Range Description" width="45%" height="auto"></p>
+</div>
+<p>Users are then prompted to a screen where they can enter amplifying information (number of shooters and iterations per shooter). The user can then click “calculate ammo expenditure” to view their estimated ammunition expenditure for their custom range day. They can then use the Apache pdfbox Library to save to their local device as a pdf.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="ScreenShots/ammoExpendScreenShot.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Ammo Expenditure</figcaption>
+</figure>
+</div>
+<div>
+<p><img src="ScreenShots/PDFScreenShot.png" alt="PDF Example" width="55%" height="auto"></p>
+</div>
+<p>Each drill corresponds to a number of estimated rounds expended (per drill) through the use of a list, which is inserted into a hashmap, and passed into another Class through use of a constructor when a new scene is loaded. The end result is a list that can be used in a simple algorithm to calculate ammunition expenditure for any amount of drills.</p>
+</section>
+<section id="workouts" class="level2">
+<h2 class="anchored" data-anchor-id="workouts">Workouts:</h2>
+<p>The Workouts Feature is a fun take on mortal combat with some of my Green Beret Buddies as substitutes. The user can cycle through a list of Green Berets, and download workouts. When the user downloads a workout, they are inplimenting the same process as before when requesting to download files from the resources page by making GET requests through an HTTP API – routed to a Lambda function in AWS, programmed in Node.js on the backend. This Lambda function generates pre-signed URLs, enabling users to execute their requests. These requests are then directed to an AWS S3 bucket within an encrypted folder.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="ScreenShots/workoutScreenshot.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Workouts</figcaption>
+</figure>
+</div>
+</section>
+<section id="news" class="level2">
+<h2 class="anchored" data-anchor-id="news">News:</h2>
+<p>The News Feature utilizes the Java Rome Library, and makes RSS feed requests to several news outlets – The Hill, Newsweek, Rand National Terroism articles, Rand Cyber and Data Science articles, Rand Homeland Security and Public Safety articles, The Army Times, Atlas News, and the White House Briefing room.</p>
+<div>
+<p><img src="ScreenShots/newsScreenShot.png" alt="News" width="48%" height="auto"> <img src="ScreenShots/NewsTwoScreenShot.png" alt="News" width="48%" height="auto"></p>
+</div>
+</section>
+<section id="getting-started" class="level2">
+<h2 class="anchored" data-anchor-id="getting-started">Getting Started</h2>
+<section id="dependencies" class="level3">
+<h3 class="anchored" data-anchor-id="dependencies">Dependencies</h3>
+<p>For a complete list of dependencies and their versions, please refer to the <a href="pom.xml">pom.xml</a> file.</p>
+</section>
+<section id="installing" class="level3">
+<h3 class="anchored" data-anchor-id="installing">Installing</h3>
+<p>You can download the latest version of our application for different platforms:</p>
+</section>
+<section id="linux-dedianubuntu" class="level3">
+<h3 class="anchored" data-anchor-id="linux-dedianubuntu">Linux Dedian/Ubuntu:</h3>
+<ul>
+<li><a href="https://github.com/tcdickson/Green-Collectives/releases/tag/v1.0.0/greencollectives_1.0_amd64.deb">Linux (Debian-based)-.deb</a></li>
+</ul>
+<p>Terminal commands to install after download:</p>
+<pre><code>cd Downloads
+sudo dpkg -i greencollectives_1.0_amd64.deb</code></pre>
+</section>
+<section id="macos-aarch64-architecture" class="level3">
+<h3 class="anchored" data-anchor-id="macos-aarch64-architecture">macOS AArch64 architecture:</h3>
+<ul>
+<li><a href="https://github.com/tcdickson/Green-Collectives/releases/tag/v1.0.0/GreenCollectives-1.0.dmg">macOS (AArch64 architecture) .dmg</a></li>
+</ul>
+</section>
+</section>
+<section id="author" class="level2">
+<h2 class="anchored" data-anchor-id="author">Author</h2>
+<p>Tyler Dickson <a href="mailto:tylerdickson17@gmail.com">Email Me</a></p>
+</section>
+<section id="license" class="level2">
+<h2 class="anchored" data-anchor-id="license">License</h2>
+<p>This project is licensed under the <a href="https://github.com/tcdickson/Green-Collectives/blob/master/LICENSE">GNU GENERAL PUBLIC LICENSE VERSION 3</a></p>
 
 
-
-<div class="quarto-title-meta">
-
-    
-  
-    
-  </div>
-  
-
-</header>
-
-<p>About this site</p>
-
-
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
