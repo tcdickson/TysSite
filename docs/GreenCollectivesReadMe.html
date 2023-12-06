@@ -20,6 +20,40 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -105,9 +139,9 @@ ul.task-list li input[type="checkbox"] {
   <ul class="collapse">
   <li><a href="#dependencies" id="toc-dependencies" class="nav-link" data-scroll-target="#dependencies">Dependencies</a></li>
   <li><a href="#installing" id="toc-installing" class="nav-link" data-scroll-target="#installing">Installing</a></li>
+  <li><a href="#windows" id="toc-windows" class="nav-link" data-scroll-target="#windows">Windows:</a></li>
   <li><a href="#linux-dedianubuntu" id="toc-linux-dedianubuntu" class="nav-link" data-scroll-target="#linux-dedianubuntu">Linux Dedian/Ubuntu:</a></li>
   <li><a href="#macos-aarch64-architecture" id="toc-macos-aarch64-architecture" class="nav-link" data-scroll-target="#macos-aarch64-architecture">macOS AArch64 architecture:</a></li>
-  <li><a href="#windows" id="toc-windows" class="nav-link" data-scroll-target="#windows">Windows:</a></li>
   </ul></li>
   <li><a href="#author" id="toc-author" class="nav-link" data-scroll-target="#author">Author</a></li>
   <li><a href="#license" id="toc-license" class="nav-link" data-scroll-target="#license">License</a></li>
@@ -125,7 +159,7 @@ ul.task-list li input[type="checkbox"] {
 <p>A Desktop Application built with javaFx with the intention of solving relevant problems and inefficiencies that U.S. Army Service members, and gun enthusiasts face on a daily basis.</p>
 <section id="description" class="level2">
 <h2 class="anchored" data-anchor-id="description">Description</h2>
-<p>After 10+ years in the military, I’m well aquatinted with it’s inefficiencies. I wanted to build something to help military personnel with some of their most relevant issues. Green Collectives is a “one-stop-shop” meant to provide soldiers with access to useful files, a consolidated list of military websites, tools to build and manage shooting ranges, competitive workouts, and access to current events.</p>
+<p>After 10+ years in the military, I’m well acquatinted with it’s inefficiencies. I wanted to build something to help military personnel with some of their most relevant issues. Green Collectives is a “one-stop-shop” meant to provide soldiers with access to useful files, a consolidated list of military websites, tools to build and manage shooting ranges, competitive workouts, and access to current events.</p>
 <p>The application’s features are as follows:</p>
 </section>
 <section id="resources" class="level2">
@@ -181,16 +215,46 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="getting-started">Getting Started</h2>
 <section id="dependencies" class="level3">
 <h3 class="anchored" data-anchor-id="dependencies">Dependencies</h3>
+<div class="sourceCode" id="cb1"><pre class="sourceCode xml code-with-copy"><code class="sourceCode xml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>- org.apache.pdfbox:pdfbox:2.0.29</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>- ch.qos.logback:logback-classic:1.4.11</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>- org.slf4j:slf4j-api:2.0.6</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>- org.apache.httpcomponents:httpclient:4.5.14</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>- org.apache.pdfbox:fontbox:2.0.29</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>- org.openjfx:javafx-web:20</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>- com.rometools:rome:2.1.0</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>- org.apache.pdfbox:pdfbox-tools:2.0.29</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>- org.apache.pdfbox:xmpbox:2.0.29</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>- com.gluonhq:ignite-common:1.2.2</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>- org.openjfx:javafx-controls:20</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>- org.openjfx:javafx-fxml:20</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>- org.controlsfx:controlsfx:11.1.2</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>- org.kordamp.bootstrapfx:bootstrapfx-core:0.4.0</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>- org.junit.jupiter:junit-jupiter-api:5.9.2 (with a 'test' scope)</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>- org.junit.jupiter:junit-jupiter-engine:5.9.2 (with a 'test' scope)</span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>- com.vaadin.external.google:android-json:0.0.20131108.vaadin1</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>For a complete list of dependencies and their versions, please refer to the <a href="https://github.com/tcdickson/Green-Collectives/blob/master/pom.xml">pom.xml</a> file.</p>
 </section>
 <section id="installing" class="level3">
 <h3 class="anchored" data-anchor-id="installing">Installing</h3>
 <p>You can download the latest version of our application for the following platforms:</p>
 </section>
+<section id="windows" class="level3">
+<h3 class="anchored" data-anchor-id="windows">Windows:</h3>
+<ul>
+<li><a href="https://github.com/tcdickson/Green-Collectives/releases/download/v1.0.1/GreenCollectives-1.0.msi">Windows Installer (.msi)</a></li>
+</ul>
+</section>
 <section id="linux-dedianubuntu" class="level3">
 <h3 class="anchored" data-anchor-id="linux-dedianubuntu">Linux Dedian/Ubuntu:</h3>
+<p>Easiest Way:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://snapcraft.io/green-collectives"><img src="https://snapcraft.io/static/images/badges/en/snap-store-black.svg" class="img-fluid figure-img"></a></p>
+<figcaption class="figure-caption">Get it from the Snap Store</figcaption>
+</figure>
+</div>
 <ul>
-<li><a href="https://github.com/tcdickson/Green-Collectives/releases/download/v1.0.0/greencollectives_1.0_amd64.deb">Linux (Debian-based)-.deb</a></li>
+<li><a href="https://github.com/tcdickson/Green-Collectives/releases/download/v1.0.1/greencollectives_1.0_amd64.deb">Linux (Debian-based) (.deb)</a></li>
 </ul>
 <p>Terminal commands to install after download:</p>
 <pre><code>cd Downloads
@@ -199,13 +263,7 @@ sudo dpkg -i greencollectives_1.0_amd64.deb</code></pre>
 <section id="macos-aarch64-architecture" class="level3">
 <h3 class="anchored" data-anchor-id="macos-aarch64-architecture">macOS AArch64 architecture:</h3>
 <ul>
-<li><a href="https://github.com/tcdickson/Green-Collectives/releases/download/v1.0.0/GreenCollectives-1.0.dmg">macOS (AArch64 architecture) .dmg</a></li>
-</ul>
-</section>
-<section id="windows" class="level3">
-<h3 class="anchored" data-anchor-id="windows">Windows:</h3>
-<ul>
-<li>Coming soon</li>
+<li><a href="https://github.com/tcdickson/Green-Collectives/releases/download/v1.0.1/GreenCollectives-1.0.dmg">macOS (AArch64 architecture) (.dmg)</a></li>
 </ul>
 </section>
 </section>

@@ -25,12 +25,19 @@ about:
 </a>
 
 
-Hello, I am Tyler Dickson. I am former Green Beret turned programmer who is passionate about software. Although my academic background includes a Financial Economics Degree from West Point Military Academy, over two years ago I discovered a love for programming. I have spent every waking moment pursuing knowledge in various coding languages to include Java, C, Javascript, and Python. I have been recently been accepted into Georgia Tech's Masters in Computer Science program and will attend in Spring 2024. 
+Hey there, I'm Tyler Dickson, a former Green Beret who found his way into the world of software development. While I initially pursued/obtained a degree in Financial Economics at West Point Military Academy, a few years ago, I stumbled upon my love for coding. These days, you'll often find me immersed in academic pursuits, as I recently kicked off a Master's Program in Computer Science at Georgia Tech. 
+
+Because of my deep ties to the military, I've always had a strong desire to support fellow servicemen and women. During my time as a Green Beret, I had the privilege of assuming leadership roles in some of the world's most politically sensitive and complex regions, spanning from the Middle East to Eastern Europe. This is what drove me to create an all-in-one solution—an application designed to furnish soldiers with convenient access to essential files, a comprehensive directory of military websites, resources for constructing and overseeing shooting ranges, engaging workout routines, and real-time updates on current events. 
+
+You can check out the application from the Snap store here:            
+<br>
+[![Get it from the Snap Store](https://snapcraft.io/static/images/badges/en/snap-store-black.svg)](https://snapcraft.io/green-collectives) 
+
+Check out the [Github Repo here](https://github.com/tcdickson/Green-Collectives.git). 
+
+If you prefer a high level overview of the project, check out the [README File](GreenCollectivesReadMe.md).
 
 
-Due to my close connection with the military, I have always had a desire to help those who serve. As a Green Beret, I have had the pleasure of serving as a commander in some of the most politically sensitive and complex areas of the world from the Middle East, to Eastern Europe. That's why I set out to develop an application that can act as a “one-stop-shop”, providing soldiers with access to useful files, a consolidated list of military websites, tools to build and manage shooting ranges, competitive workouts, and access to current events. Check out the [Github Repo here here](https://github.com/tcdickson/Green-Collectives.git). Or, if you prefer a high overview of the project, check out the [README File here](GreenCollectivesReadMe.md).
-
-
-I have also created a web application that seeks to solve one of the biggest individual issues that individual soldiers encounter on a day to day basis. File sharing. Similar to the way Github has provided an outlet to share files amoungst the tech community, I seek to provide a platform where soldiers can upload and share helpful documents. The file sharing site is structured around an HTTP API gateway that send requests to a lambda function in AWS to generate pre signed urls, and making GET and PUT requests to an S3 Bucket. [Click here](https://greencollectives.com/) to see the site. 
+Another fun project I recently completed is the creation of a web application aimed at addressing a critical challenge faced by soldiers every day – the accessibility of essential files. Just as sites like Github have made it easy for tech folks to share files, I've built a collaborative file sharing platform where soldiers can upload and share helpful files. The site is structured around an HTTP API gateway that send requests to a node js lambda function in AWS to generate pre signed urls, and making GET and PUT requests to an S3 Bucket. [Click here](https://greencollectives.com/) to see the site. 
 
 Finally, a copy of my CV can be downloaded [here](Dickson_Resume.pdf). 

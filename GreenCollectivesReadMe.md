@@ -4,7 +4,7 @@ A Desktop Application built with javaFx with the intention of solving relevant p
 
 ## Description
 
-After 10+ years in the military, I’m well aquatinted with it’s inefficiencies. I wanted to build something to help military personnel with some of their most relevant issues. Green Collectives is a “one-stop-shop” meant to provide soldiers with access to useful files, a consolidated list of military websites, tools to build and manage shooting ranges, competitive workouts, and access to current events.
+After 10+ years in the military, I’m well acquatinted with it’s inefficiencies. I wanted to build something to help military personnel with some of their most relevant issues. Green Collectives is a “one-stop-shop” meant to provide soldiers with access to useful files, a consolidated list of military websites, tools to build and manage shooting ranges, competitive workouts, and access to current events.
 
 The application’s features are as follows:
 
@@ -64,15 +64,43 @@ The News Feature utilizes the Java Rome Library, and makes RSS feed requests to 
 
 ### Dependencies
 
+```xml
+- org.apache.pdfbox:pdfbox:2.0.29
+- ch.qos.logback:logback-classic:1.4.11
+- org.slf4j:slf4j-api:2.0.6
+- org.apache.httpcomponents:httpclient:4.5.14
+- org.apache.pdfbox:fontbox:2.0.29
+- org.openjfx:javafx-web:20
+- com.rometools:rome:2.1.0
+- org.apache.pdfbox:pdfbox-tools:2.0.29
+- org.apache.pdfbox:xmpbox:2.0.29
+- com.gluonhq:ignite-common:1.2.2
+- org.openjfx:javafx-controls:20
+- org.openjfx:javafx-fxml:20
+- org.controlsfx:controlsfx:11.1.2
+- org.kordamp.bootstrapfx:bootstrapfx-core:0.4.0
+- org.junit.jupiter:junit-jupiter-api:5.9.2 (with a 'test' scope)
+- org.junit.jupiter:junit-jupiter-engine:5.9.2 (with a 'test' scope)
+- com.vaadin.external.google:android-json:0.0.20131108.vaadin1
+```
 For a complete list of dependencies and their versions, please refer to the [pom.xml](https://github.com/tcdickson/Green-Collectives/blob/master/pom.xml) file.
 
 ### Installing
 
 You can download the latest version of our application for the following platforms:
 
+### Windows:
+
+- [Windows Installer (.msi)](https://github.com/tcdickson/Green-Collectives/releases/download/v1.0.1/GreenCollectives-1.0.msi)
+
 ### Linux Dedian/Ubuntu:
 
-- [Linux (Debian-based)-.deb](https://github.com/tcdickson/Green-Collectives/releases/download/v1.0.0/greencollectives_1.0_amd64.deb)
+Easiest Way:
+
+[![Get it from the Snap Store](https://snapcraft.io/static/images/badges/en/snap-store-black.svg)](https://snapcraft.io/green-collectives)
+
+
+- [Linux (Debian-based) (.deb)](https://github.com/tcdickson/Green-Collectives/releases/download/v1.0.1/greencollectives_1.0_amd64.deb)
 
 Terminal commands to install after download:
 
@@ -83,11 +111,7 @@ sudo dpkg -i greencollectives_1.0_amd64.deb
 
 ### macOS AArch64 architecture:
 
-- [macOS (AArch64 architecture) .dmg](https://github.com/tcdickson/Green-Collectives/releases/download/v1.0.0/GreenCollectives-1.0.dmg)
-
-### Windows:
-
-- Coming soon
+- [macOS (AArch64 architecture) (.dmg)](https://github.com/tcdickson/Green-Collectives/releases/download/v1.0.1/GreenCollectives-1.0.dmg)
 
 ## Author
 
