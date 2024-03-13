@@ -4,14 +4,20 @@ project:
   render: 
     - index.qmd
     - GreenCollectivesReadMe.md
+    - projectPage.md
 sidebar:
   contents:
     - about.qmd
+
 website:
-  title: "Home"
-  navbar: 
-    search: true
+  navbar:
     background: primary
+    search: true
+    left:
+      - text: "Home"
+        file: index.qmd
+      - text: "Additional Projects"  
+        file: projectPage.md
   
     
 format:
