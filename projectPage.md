@@ -12,17 +12,24 @@ A collaborative file sharing platform where soldiers can upload and share helpfu
 [Link](https://greencollectives.com/) 
 
 ## Android Job Comparison Application:
-Collaborative GA Tech Project - Pending Release Permission 
+
+A job comparison application built in Android Studios using Android Room.
+
+[High Level Overview](DesignDocument.md)
 
 
-## Propositional Logic / Logic Circuit Calculator (in Progress):
-Connectives are symbols or operators used to combine or manipulate logical propositions (statements) to form more complex statements. Connectives allow you to express relationships between propositions and are fundamental for constructing logical expressions and reasoning about them.
 
-Truth tables play important roles in the visualization and problem solving of logical problems, boolean algebra, determining logical equivalence, and making decisions. Boolean math is the basis behind many activities we perform every day such as entering a sentence into a search engine. 
+## Propositional Logic / Logic Circuit Calculator:
+A C++ program that takes a series of logical connectives as user input and displays a truth table as binary output.
 
-The user will input a sequence of logical connectives. The program will output the connective in the binary representation of a truth table or a logic circuit. Several algorithms communicating with various methods are implementd to parse and loop through char arrays, variables, and constants.
+Logical connectives are pivotal operators that amalgamate or modify logical statements to construct intricate propositions, enabling the articulation of relationships among these statements. These are indispensable in building logical expressions and in analytical reasoning. Truth tables are essential tools in visualizing and resolving logical dilemmas, engaging in Boolean algebra, assessing logical equivalence, and facilitating decision-making processes. Boolean operations underpin many everyday functionalities, including search engine queries. 
 
-[Link](TopicProposal.pdf)
+Users input a sequence of logical connectives, and the program renders these inputs either as truth tables or as logic circuit diagrams. A suite of algorithms will parse and iterate over characters, variables, and constants to produce the desired outputs.
+
+[High Level Overview](TruthTableWriteup.pdf)
+
+Check out the [Github Repo here](https://github.com/tcdickson/TruthTableLogic.git). 
+
 
 ## Re-Imagining Data Collection and Analysis in Special Education:
 A research paper culminating in the development of a medium fidelity prototype focusing on the redesign of PowerSchool's Individualized Education Programs (IEPs) interface, particularly the Present Level of Performance (PLOP) interface.

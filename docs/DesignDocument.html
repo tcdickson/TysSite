@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>projectpage</title>
+<title>designdocument</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -83,7 +83,7 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./projectPage.html" rel="" target="" aria-current="page">
+    <a class="nav-link" href="./projectPage.html" rel="" target="">
  <span class="menu-text">Additional Projects</span></a>
   </li>  
 </ul>
@@ -103,13 +103,24 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#projects" id="toc-projects" class="nav-link active" data-scroll-target="#projects">Projects</a>
+  <li><a href="#design-document" id="toc-design-document" class="nav-link active" data-scroll-target="#design-document">Design Document</a>
   <ul class="collapse">
-  <li><a href="#green-collectives---desktop-application" id="toc-green-collectives---desktop-application" class="nav-link" data-scroll-target="#green-collectives---desktop-application">Green Collectives - Desktop Application</a></li>
-  <li><a href="#green-collectives---web-application" id="toc-green-collectives---web-application" class="nav-link" data-scroll-target="#green-collectives---web-application">Green Collectives - Web Application:</a></li>
-  <li><a href="#android-job-comparison-application" id="toc-android-job-comparison-application" class="nav-link" data-scroll-target="#android-job-comparison-application">Android Job Comparison Application:</a></li>
-  <li><a href="#propositional-logic-logic-circuit-calculator" id="toc-propositional-logic-logic-circuit-calculator" class="nav-link" data-scroll-target="#propositional-logic-logic-circuit-calculator">Propositional Logic / Logic Circuit Calculator:</a></li>
-  <li><a href="#re-imagining-data-collection-and-analysis-in-special-education" id="toc-re-imagining-data-collection-and-analysis-in-special-education" class="nav-link" data-scroll-target="#re-imagining-data-collection-and-analysis-in-special-education">Re-Imagining Data Collection and Analysis in Special Education:</a></li>
+  <li><a href="#design-considerations" id="toc-design-considerations" class="nav-link" data-scroll-target="#design-considerations">1 Design Considerations</a>
+  <ul class="collapse">
+  <li><a href="#assumptions" id="toc-assumptions" class="nav-link" data-scroll-target="#assumptions">1.1 Assumptions</a></li>
+  <li><a href="#constraints" id="toc-constraints" class="nav-link" data-scroll-target="#constraints">1.2 Constraints</a></li>
+  <li><a href="#system-environment" id="toc-system-environment" class="nav-link" data-scroll-target="#system-environment">1.3 System Environment</a></li>
+  </ul></li>
+  <li><a href="#architectural-design" id="toc-architectural-design" class="nav-link" data-scroll-target="#architectural-design">2 Architectural Design</a>
+  <ul class="collapse">
+  <li><a href="#component-diagram" id="toc-component-diagram" class="nav-link" data-scroll-target="#component-diagram">2.1 Component Diagram</a></li>
+  <li><a href="#deployment-diagram" id="toc-deployment-diagram" class="nav-link" data-scroll-target="#deployment-diagram">2.2 Deployment Diagram</a></li>
+  </ul></li>
+  <li><a href="#low-level-design" id="toc-low-level-design" class="nav-link" data-scroll-target="#low-level-design">3 Low-Level Design</a>
+  <ul class="collapse">
+  <li><a href="#class-diagram" id="toc-class-diagram" class="nav-link" data-scroll-target="#class-diagram">3.1 Class Diagram</a></li>
+  </ul></li>
+  <li><a href="#user-interface-design" id="toc-user-interface-design" class="nav-link" data-scroll-target="#user-interface-design">User Interface Design</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -119,35 +130,182 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<section id="projects" class="level1">
-<h1>Projects</h1>
-<section id="green-collectives---desktop-application" class="level2">
-<h2 class="anchored" data-anchor-id="green-collectives---desktop-application">Green Collectives - Desktop Application</h2>
-<p>A Desktop Application built with javaFx with the intention of solving relevant problems and inefficiencies that U.S. Army Service members, and gun enthusiasts face on a daily basis</p>
-<p><a href="https://snapcraft.io/green-collectives">Link</a></p>
+<section id="design-document" class="level1">
+<h1>Design Document</h1>
+<section id="design-considerations" class="level2">
+<h2 class="anchored" data-anchor-id="design-considerations">1 Design Considerations</h2>
+<section id="assumptions" class="level3">
+<h3 class="anchored" data-anchor-id="assumptions">1.1 Assumptions</h3>
+<section id="section" class="level5">
+<h5 class="anchored" data-anchor-id="section"></h5>
+<ul>
+<li>The user should be able to enter and remove job details, job offers, adjust comparison settings, and compare jobs</li>
+<li>Data that has been entered into the system is persisted, and is loaded after the application is opened back up.</li>
+<li>The user will have sufficient hardware capabilities to handle the application’s performance requirements.</li>
+<li>Android Room provides a reliable method for the user to store data.</li>
+<li>Standard security practices will adequately protect user data from unauthorized access.</li>
+</ul>
 </section>
-<section id="green-collectives---web-application" class="level2">
-<h2 class="anchored" data-anchor-id="green-collectives---web-application">Green Collectives - Web Application:</h2>
-<p>A collaborative file sharing platform where soldiers can upload and share helpful files.</p>
-<p><a href="https://greencollectives.com/">Link</a></p>
 </section>
-<section id="android-job-comparison-application" class="level2">
-<h2 class="anchored" data-anchor-id="android-job-comparison-application">Android Job Comparison Application:</h2>
-<p>A job comparison application built in Android Studios using Android Room.</p>
-<p><a href="./DesignDocument.html">High Level Overview</a></p>
+<section id="constraints" class="level3">
+<h3 class="anchored" data-anchor-id="constraints">1.2 Constraints</h3>
+<section id="platform-compatibility" class="level4">
+<h4 class="anchored" data-anchor-id="platform-compatibility">Platform Compatibility</h4>
+<ul>
+<li><p>The application targets Android 13, introducing behavior changes and new APIs that may affect user experience. To ensure broad compatibility, testing across devices running Android 12 through Android 13 is critical, as API availability varies by version.</p></li>
+<li><p>The large Android ecosystem effects how different devices may or may not uniformly adopt Android 13. This could impact functionality or appearance. Figure [1] illustrates the current distribution of Android 13 users, highlighting the importance of compatibility considerations.</p></li>
+</ul>
+<p><img src="Images/AndroidSDK.png" class="img-fluid"></p>
 </section>
-<section id="propositional-logic-logic-circuit-calculator" class="level2">
-<h2 class="anchored" data-anchor-id="propositional-logic-logic-circuit-calculator">Propositional Logic / Logic Circuit Calculator:</h2>
-<p>A C++ program that takes a series of logical connectives as user input and displays a truth table as binary output.</p>
-<p>Logical connectives are pivotal operators that amalgamate or modify logical statements to construct intricate propositions, enabling the articulation of relationships among these statements. These are indispensable in building logical expressions and in analytical reasoning. Truth tables are essential tools in visualizing and resolving logical dilemmas, engaging in Boolean algebra, assessing logical equivalence, and facilitating decision-making processes. Boolean operations underpin many everyday functionalities, including search engine queries.</p>
-<p>Users input a sequence of logical connectives, and the program renders these inputs either as truth tables or as logic circuit diagrams. A suite of algorithms will parse and iterate over characters, variables, and constants to produce the desired outputs.</p>
-<p><a href="TruthTableWriteup.pdf">High Level Overview</a></p>
-<p>Check out the <a href="https://github.com/tcdickson/TruthTableLogic.git">Github Repo here</a>.</p>
+<section id="platform-security" class="level4">
+<h4 class="anchored" data-anchor-id="platform-security">Platform Security</h4>
+<ul>
+<li>Adhering to regulations for handling Personally Identifiable Information (PII) is crucial due to the sensitive nature of data like salary details. While Android Room adds a layer of abstraction over SQLite, we will employ SQLCipher for full database encryption and additional field-level encryption for heightened security. Despite these precautions, we recognize that no encryption method is impervious to attacks.</li>
+</ul>
 </section>
-<section id="re-imagining-data-collection-and-analysis-in-special-education" class="level2">
-<h2 class="anchored" data-anchor-id="re-imagining-data-collection-and-analysis-in-special-education">Re-Imagining Data Collection and Analysis in Special Education:</h2>
-<p>A research paper culminating in the development of a medium fidelity prototype focusing on the redesign of PowerSchool’s Individualized Education Programs (IEPs) interface, particularly the Present Level of Performance (PLOP) interface.</p>
-<p><a href="ProjectOneFinal.pdf">Link</a></p>
+<section id="reliability-on-user-datamemory" class="level4">
+<h4 class="anchored" data-anchor-id="reliability-on-user-datamemory">Reliability on User data/memory</h4>
+<ul>
+<li>The use of Android Room defines a SQLite database that resides on the users local device. Because the database is stored locally, an internet connection is not required. However, this relies on the user to have enough memory on their device to execute requests. Inadequate user memory will prevent the application’s ability to function correctly, relying on user awareness of their device’s storage capabilities to prevent execute all requests as intended.</li>
+</ul>
+</section>
+<section id="user-accessibility" class="level4">
+<h4 class="anchored" data-anchor-id="user-accessibility">User Accessibility</h4>
+<ul>
+<li>Designing an application to be intuitive and responsive, but also adhere to accessibility guidelines often oppose one another. The design must comply with regulatory rules to comply with accessibility guidelines. This may limit design aspects such as contrast, color, bright images, etc. While Android provides accessibility hints, lack of access to a robust team to conduct usability testing will present a challenge to our four person group.</li>
+</ul>
+</section>
+</section>
+<section id="system-environment" class="level3">
+<h3 class="anchored" data-anchor-id="system-environment">1.3 System Environment</h3>
+<section id="database-management" class="level4">
+<h4 class="anchored" data-anchor-id="database-management">Database Management</h4>
+<ul>
+<li><p>Android Room will be used for database management.</p></li>
+<li><p>The Room persistence library provides an abstraction layer over SQLite to allow fluent database access while harnessing the full power of SQLite. In particular, Room provides the following benefits:</p>
+<ul>
+<li>Compile-time verification of SQL queries.</li>
+<li>Convenience annotations that minimize repetitive and error-prone boilerplate code.</li>
+<li>Streamlined database migration paths</li>
+</ul></li>
+</ul>
+</section>
+<section id="android-13-api-33" class="level4">
+<h4 class="anchored" data-anchor-id="android-13-api-33">Android 13 &amp; API 33</h4>
+<ul>
+<li>The application is designed for Android Operating System. Specifically, android 13 is the targeted system, and SDK 33 is the targeted SDK. Usability testing is conducted to ensure broad use and compatibility with the broader Android audience.</li>
+</ul>
+</section>
+<section id="development-environment" class="level4">
+<h4 class="anchored" data-anchor-id="development-environment">Development Environment</h4>
+<ul>
+<li><p>The Application is developed using Android Studios</p></li>
+<li><p>Gradle 8.2 is used to compile, build, and package the application</p></li>
+<li><p>Java 17 is the primary programming language. However, the application contains XML, and Structured Query Language (SQL).</p></li>
+<li><p>A collaborative Git environment is used for version control, data integrity, and workflow management.</p></li>
+</ul>
+</section>
+</section>
+</section>
+<section id="architectural-design" class="level2">
+<h2 class="anchored" data-anchor-id="architectural-design">2 Architectural Design</h2>
+<section id="database-architecture" class="level4">
+<h4 class="anchored" data-anchor-id="database-architecture">Database Architecture</h4>
+<p><img src="Images/DatabaseArc.png" class="img-fluid"></p>
+<p>Figure 2 represents the broad architectural structure for the Database class. The database class defines the database configuration and serves as the application’s main access point to the persisted data. The class is annotated with a <code>@Database</code> annotation that includes an entities array that lists all of the data entities associated with the database. The class must be an abstract class that extends the Database class. For each Data Access Object (DAO) class that is associated with the database, the database class must define an abstract method that has zero arguments and returns an instance of the DAO class.</p>
+<p>The database will be responsible to store and retrieve all information about the users current job, job offers, and comparison settings</p>
+<p>To visualize this, it’s helpful to think of data entities as objects within the Database Room. Entities in Room represent the app’s data structures, which are mapped to tables within the SQLite database. Each entity, annotated with <span class="citation" data-cites="Entity">@Entity</span>, corresponds to a table where its fields represent columns. The <span class="citation" data-cites="primaryKey">@primaryKey</span> specifies that the ‘id’ field as the primary key, and it will be automatically generated. These can be referenced later for specific purposes. <span class="citation" data-cites="ColumnInfo">@ColumnInfo</span> is used to specify the name of the column in the database, ensuring our data model aligns with our database layout. For example, in our Job entity, fields like title, company, city, and state are mapped to respective columns, facilitating organized data storage and retrieval.</p>
+<pre><code>@Entity
+public class Job {
+    @PrimaryKey
+    public int uid;
+&nbsp;&nbsp;&nbsp;&nbsp;
+    @ColumnInfo(title = "title")
+    public String title;
+
+    @ColumnInfo(company = "company")
+    public String company;
+
+&nbsp;&nbsp;&nbsp;&nbsp;@ColumnInfo(city = "city")
+    public String city;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;@ColumnInfo(state = "state")
+    public String state;
+}</code></pre>
+<p>The DAO (Data Access Object) plays the role of abstracting the complexity of database access. Annotated with <span class="citation" data-cites="Dao">@Dao</span>, it defines a set of methods for performing database operations, allowing to perform queries and manipulations. Methods within a DAO interface are annotated to represent specific SQL queries or transactions. In the code below, we use <span class="citation" data-cites="Query">@Query</span> for fetching data, <span class="citation" data-cites="Insert">@Insert</span> for adding records, and <span class="citation" data-cites="Delete">@Delete</span> for removing them. Each method performs interactions with the database. For example, our JobDao includes methods for retrieving job entries, inserting multiple jobs, and deleting a specific job.</p>
+<pre><code>@Dao
+public interface JobDao {
+    @Query("SELECT * FROM job")
+    List&lt;Job&gt; getAll();
+
+    @Query("SELECT * FROM job WHERE title = :title AND company = :company")
+    Job findByTitleAndCompany(String title, String company);
+
+    @Insert
+    void insertAll(Job... jobs);
+
+    @Delete
+    void delete(Job job);
+}</code></pre>
+</section>
+<section id="component-diagram" class="level3">
+<h3 class="anchored" data-anchor-id="component-diagram">2.1 Component Diagram</h3>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="Images/ComponentDiagram.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">TeamUMLDesign(11)</figcaption>
+</figure>
+</div>
+<p>The component diagram depicted in figure 3 displays the structural relationships between the components in the application. Components are autonomous, encapsulated units within the application.</p>
+<p>The Main Menu serves as the central hub from which users can navigate to various functionalities: Comparison Settings, Current Job Details, and Job Offers. Each of these functionalities is represented as a distinct component, reflecting their one-to-one relationship with the Main Menu. There is one condition which enable the user to access the comparison menu from the main menu. If the user already has entered a current job, and the user has entered at least one job offer, then they are able to navigate to the comparison menu.</p>
+<p>Job Offers component allows navigation to the Comparison Menu under two specific conditions: If the user has entered at least two job offers, or the user has entered one job offer and has entered a current job, the user may navigate to the comparison menu.</p>
+<p>The Comparison Menu acts as a gateway to the Compare Job Offers component, which is accessible when the user has selected at least two jobs for comparison. It also provides options for the user to navigate back to the Main Menu or to the Job Offers component.</p>
+<p>In the Compare Job Offers component, users can view selected job offers as a side-by-side comparison. From here, users can initiate a new comparison by returning to the Comparison Menu or choose to go back to the Main Menu.</p>
+</section>
+<section id="deployment-diagram" class="level3">
+<h3 class="anchored" data-anchor-id="deployment-diagram">2.2 Deployment Diagram</h3>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="Images/DeploymentDiagram.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">TeamUMLDesign(13)</figcaption>
+</figure>
+</div>
+<p>This application is developed as a school project and not intended for immediate real-world deployment. However, understanding the deployment process will be important for future deployment. The deployment diagram depicted below illustrates the application’s packaging and installation process on any compatible Android device.</p>
+<p>The diagram showcases three primary components that are packaged into the Application Package (.apk) file:</p>
+<ul>
+<li><strong>Compiled Classes</strong>: These represent the compiled Java code that defines the application’s functionality.</li>
+<li><strong>Compiled Resources</strong>: This includes all of the Android resources such as layouts, strings, and images.</li>
+<li><strong>AndroidManifest.xml</strong>: The manifest file, which declares the application’s permissions, components, and minimum API/SDK requirements.</li>
+</ul>
+<p>These components are compiled and packaged into an .apk file, which is the standard format for Android applications. When the application is installed on an Android device, the .apk is unpacked, and the manifest file guides the operating system in setting up the application’s execution environment.</p>
+<p>The execution environment on the device is responsible for running the application. It interacts with the Android Room Database, which is created and managed locally on the device. This allows the application to store and retrieve data persistently, enabling functionalities such as saving job details and comparison settings directly on the user’s device without requiring an external database connection.</p>
+</section>
+</section>
+<section id="low-level-design" class="level2">
+<h2 class="anchored" data-anchor-id="low-level-design">3 Low-Level Design</h2>
+<section id="class-diagram" class="level3">
+<h3 class="anchored" data-anchor-id="class-diagram">3.1 Class Diagram</h3>
+<p>Ommitted</p>
+</section>
+</section>
+<section id="user-interface-design" class="level2">
+<h2 class="anchored" data-anchor-id="user-interface-design">User Interface Design</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="Images/UserInterfaceDesign.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Mobile wireframe(1)</figcaption>
+</figure>
+</div>
+<p>The diagram in figure [ ] depicts the graphical user interface (GUI) design. From the main menu, the user can navigate to any of the five possible screens.</p>
+<ul>
+<li><p>The <code>Current Job</code> GUI loads current job details if one exists. It also allows the user to input job details to be saved to the database.</p></li>
+<li><p>The Comparison Settings GUI loads comparison settings if they exist, or it allows the user to input comparison settings.</p></li>
+<li><p>The Enter Job Offer GUI allows the user to enter job offers. Selecting <code>Compare with Current Job</code> allows the user to navigate directly to the Job Comparison screen if the user has previously entered a current job.</p></li>
+<li><p>The Comparison Menu allows user to view, delete, and compare jobs based on selected jobs via a checklist. Selecting the <code>Compare</code> launches the Job Comparison GUI.</p></li>
+<li><p>The Job Comparison GUI allows the user to view the selected jobs as a side by side comparison. Selecting <code>New Comparison</code> will return the user to the Comparison menu.</p></li>
+<li><p>If the user enters at least one job offer, and the user has a current job stored, then the user may select <code>Compare Selected Jobs</code> from the main menu. This will launch the Job Comparison GUI.</p></li>
+</ul>
+<p>The figure above demonstrates the importance of the database as the main access point to persistent data. Every screen requires access the database to either store or retrieve data.</p>
 
 
 </section>

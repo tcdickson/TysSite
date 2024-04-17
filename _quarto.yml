@@ -5,6 +5,7 @@ project:
     - index.qmd
     - GreenCollectivesReadMe.md
     - projectPage.md
+    - DesignDocument.md
 sidebar:
   contents:
     - about.qmd
