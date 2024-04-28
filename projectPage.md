@@ -26,7 +26,7 @@ Logical connectives are pivotal operators that amalgamate or modify logical stat
 
 Users input a sequence of logical connectives, and the program renders these inputs either as truth tables or as logic circuit diagrams. A suite of algorithms will parse and iterate over characters, variables, and constants to produce the desired outputs.
 
-[High Level Overview](TruthTableWriteup.pdf)
+[High Level Overview](TThighLevelOverview.pdf)
 
 Check out the [Github Repo here](https://github.com/tcdickson/TruthTableLogic.git). 
 

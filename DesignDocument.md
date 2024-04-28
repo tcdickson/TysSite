@@ -126,7 +126,7 @@ public interface JobDao {
 
 ### 2.1 Component Diagram
 
-![TeamUMLDesign(11)](Images/ComponentDiagram.png)
+![](Images/ComponentDiagram.png)
 
 The component diagram depicted in figure 3 displays the structural relationships between the components in the application. Components are autonomous, encapsulated units within the application.
 
@@ -140,7 +140,7 @@ In the Compare Job Offers component, users can view selected job offers as a sid
 
 ### 2.2 Deployment Diagram
 
-![TeamUMLDesign(13)](Images/DeploymentDiagram.png)
+![](Images/DeploymentDiagram.png)
 
 This application is developed as a school project and not intended for immediate real-world deployment. However, understanding the deployment process will be important for future deployment. The deployment diagram depicted below illustrates the application's packaging and installation process on any compatible Android device.
 
@@ -163,7 +163,7 @@ Ommitted
 
 ## User Interface Design
 
-![Mobile wireframe(1)](Images/UserInterfaceDesign.png)
+![](Images/UserInterfaceDesign.png)
 
 The diagram in figure [ ] depicts the graphical user interface (GUI) design. From the main menu, the user can navigate to any of the five possible screens.
 
